@@ -2,7 +2,7 @@ import { Strategy } from 'passport-local';
 import { PassportStrategy } from '@nestjs/passport';
 import { Injectable } from '@nestjs/common';
 import { AuthService } from './auth.service';
-import User from 'src/entities/user.entity';
+import User from 'src/user/entities/user.entity';
 
 // 전체 인증 프로세스를 위한 Passport Strategy 사용
 // 사용자를 아이디와 비밀번호를 통해 인증하는 전략

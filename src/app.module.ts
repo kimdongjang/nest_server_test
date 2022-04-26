@@ -9,13 +9,13 @@ import { TypeOrmModule } from '@nestjs/typeorm';
   imports: [
     UserModule,
     TypeOrmModule.forRoot({
-      type: 'mysql',
+      type: 'mariadb',
       host: 'localhost',
       port: 3306,
       username: 'root',
-      password: 'root',
+      password: '1234',
       database: 'test',
-      entities: [],
+      entities: ['/../**/*.entity{.ts,.js}'],
       synchronize: true,
     }),
   ],
